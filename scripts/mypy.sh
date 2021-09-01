@@ -1,0 +1,1 @@
+PYTHONPATH=src mypy --config-file mypy.ini

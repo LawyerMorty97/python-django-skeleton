@@ -1,0 +1,28 @@
+name: mypy
+on: [push]
+defaults:
+  run:
+    shell: bash
+jobs:
+  build:
+    runs-on: self-hosted
+    env:
+      APP_ENVIRONMENT: 'staging'
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.9.5
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9.5'
+    - uses: actions/cache@v2
+      id: python-cache
+      with:
+        path: ${{ env.pythonLocation }}
+        key: ${{ env.pythonLocation }}-${{ hashFiles('requirements.txt') }}
+    - name: Install Requirements
+      if: steps.python-cache.outputs.cache-hit != 'true'
+      run: |
+        pip install -r requirements.txt
+    - name: Run mypy
+      run: |
+        scripts/mypy.sh

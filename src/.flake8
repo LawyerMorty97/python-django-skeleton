@@ -1,0 +1,13 @@
+[flake8]
+ignore = E501, W503, W504, U100
+max-line-length = 120
+exclude = 
+    vendor,
+    .git,
+    .pytest_cache,
+    .mypy_cache,
+    venv,
+    env,
+    */migrations/*
+max-complexity = 10
+unused_arguments-ignore-variadic-names = True

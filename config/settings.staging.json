@@ -1,0 +1,13 @@
+{
+    "DEBUG": true,
+    "DOMAINS": [
+        "http://localhost:8000"
+    ],
+    "DATABASE_NAME": "",
+    "DATABASE_USER": "",
+    "DATABASE_PASSWORD": "",
+    "DATABASE_HOST": "",
+    "USE_DATABASE": true,
+    "MYPY_DJANGO_CONFIG": "./mypy.ini",
+    "RUNNING_ON_LOCALHOST": false
+}
