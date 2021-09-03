@@ -71,8 +71,8 @@ AUTHENTICATION_BACKENDS = [
 
 # Django REST Framework
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly"
     ],
     "DEFAULT_RENDERER_CLASSES": [
         "rest_framework.renderers.JSONRenderer",
@@ -93,7 +93,6 @@ INSTALLED_APPS = [
     "rest_framework",
     "django_filters",
     "simple_history",
-
     # TODO: Add apps here
 ]
 
