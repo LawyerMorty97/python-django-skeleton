@@ -1,7 +1,6 @@
 import logging
 import pytest
 import json
-import jwt
 import random
 import string
 from unittest import mock

@@ -55,8 +55,8 @@ ENV = _env
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# TODO: generate new secret key
-SECRET_KEY = ""
+# TODO: generate new secret key: python ./scripts/gen_secret_key.py
+SECRET_KEY = "h(vl^c^q7heqsv-qq(=3u@*p=nh+ch2l$^*i)hpowu!v8e#&5g"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = ENV.get("DEBUG", False)
