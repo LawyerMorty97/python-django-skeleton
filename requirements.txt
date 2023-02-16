@@ -9,7 +9,7 @@ markdown==3.3.4
 factory-boy==3.2.0
 django-test-migrations==1.1.0
 pydantic==1.8.2
-werkzeug==2.0.1
+werkzeug==2.2.3
 flake8==3.9.2
 python-gnupg==0.4.7
 requests==2.25.1
